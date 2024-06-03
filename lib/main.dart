@@ -3,6 +3,8 @@ import 'package:pharma_town_project/screens/splash.dart';
 
 void main() {
   runApp(
-    const Splash(),
+    const MaterialApp(
+      home: SplashScreen(),
+    ),
   );
 }
