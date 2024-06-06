@@ -18,9 +18,9 @@ class _HomePageState extends State<HomePage> {
         clipBehavior: Clip.none,
         children: [
           Container(
-            color: ColorConstant.primaryColor,
+            color: Theme.of(context).colorScheme.primary,
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(15, 25, 15, 0),
+              padding: const EdgeInsets.fromLTRB(15, 25, 15, 15),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -32,17 +32,17 @@ class _HomePageState extends State<HomePage> {
                         style: ElevatedButton.styleFrom(
                             backgroundColor: ColorConstant.buttonColor),
                         onPressed: () {},
-                        child: const Expanded(
+                        child: Expanded(
                           child: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.account_circle,
                                 color: Colors.white,
                               ),
-                              SizedBox(width: 8),
+                              const SizedBox(width: 8),
                               Text(
                                 'Đăng nhập/Đăng ký',
-                                style: TextStyle(color: Colors.white),
+                                style: Theme.of(context).textTheme.titleLarge,
                               ),
                             ],
                           ),
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   const SizedBox(height: 40),
-                  Image.asset('assets/images/logo.png'),
+                  Image.asset('assets/images/logo_home.png'),
                 ],
               ),
             ),
