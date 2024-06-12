@@ -13,6 +13,7 @@ class _LoginState extends State<Login> {
     return const Column(
       children: [
         Text('hello'),
+        Text('hello'),
       ],
     );
   }
